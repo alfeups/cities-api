@@ -31,7 +31,8 @@ public class DistanceResource {
     public ResponseEntity byCube(@RequestParam(name = "from") final Long city1,
                          @RequestParam(name = "to") final Long city2) {
         log.info("byCube");
-        return ResponseEntity.ok().body(service.distanceByCubeInMeters(city1, city2));
+        return ResponseEntity.ok().body
+                (service.distanceByCubeInMeters(city1, city2));
     }
 
 
