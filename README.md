@@ -4,7 +4,7 @@
 
 <p style='text-align: justify;'>Primeiramente para foi criado o Gradle Project no  <a href="https://start.spring.io/">Spring Boot - Spring Initializr</a>. Nele é possível escolher o tipo do projeto - neste caso Gradle Project - a versão do Spring boot,nome do domínio, do projeto, uma breve descrição, o topo do packing, versão do java (linguagem escolhida) e por último e não menos importante, as dependências - no nosso caso foram escolhidas as Spring Web, Spring Data JPA e PostgreSQL driver.</p>
 
-<img src="img/spring-boot.jpg" alt="some text" width=700 height=500>
+<img src="img/spring-boot.jpg" alt="some text" width=800 height=550>
 
 
 Após realizar o download do arquivo, só extrair numa pasta da sua escolha, normalmente ponho os projetos numa chamada workspace, a maioria faz isso na verdade. Uma vez tendo o file extraído no local da sua preferência, abri-lo com o IntelliJ IDEA, que foi a IDE utilizada neste projeto. Ao abrir este projeto as dependências serão instaladas automanticamente ao iniciar. As configurações escolhidas podem ser conferidas no 'build.gradle'. Deve-se checar antes de se desenvolver o projeto se as versões do jdk e gradle são compatíveis, isso é realmente um time consuming mas faz a diferença - falo por experiência própria - neste projeto foi-se utilizada a versão jdk 11.
