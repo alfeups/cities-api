@@ -9,7 +9,7 @@
 
 Após realizar o download do arquivo, só extrair numa pasta da sua escolha, normalmente coloco os projetos numa chamada workspace, a maioria faz isso na verdade. Uma vez tendo o file extraído no local da sua preferência, abri-lo com o IntelliJ IDEA, que foi a IDE utilizada neste projeto. Ao abrir este projeto as dependências serão instaladas automanticamente ao iniciar. As configurações escolhidas podem ser conferidas no 'build.gradle'. Deve-se checar antes de se desenvolver o projeto se as versões do jdk e gradle são compatíveis, isso é realmente um time consuming mas faz a diferença - falo por experiência própria - neste projeto foi-se utilizada a versão jdk 11.
 
-<p style='text-align: justify;'>Para manejar o bando de dados foi-se utilizado o <a href="https://www.docker.com/">docker</a>, com ele é possível empacotar containers e usa-lo em produção, com ele foi usado uma imagem postgres para rodar o container gerado pelo docker para a aplicação em criação. Portanto, foi-se criado o container com configurações do banco de dados através do postres através do comando:
+<p style='text-align: justify;'>Para manejar o banco de dados foi-se utilizado o <a href="https://www.docker.com/">docker</a>, com ele é possível empacotar containers e usa-lo em produção, com ele foi usado uma imagem postgres para rodar o container gerado pelo docker para a aplicação em criação. Portanto, foi-se criado o container com configurações do banco de dados através do postres através do comando:
 
 `docker run --name dio-cities-db -d -p 5432:5432 -e POSTGRES_USER=postgres_user_city -e POSTGRES_PASSWORD=super_password -e POSTGRES_DB=cities postgres`
 
